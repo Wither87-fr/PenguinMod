@@ -1,7 +1,10 @@
 package fr.wither.penguinmod;
 
 import com.mojang.logging.LogUtils;
+import fr.wither.penguinmod.items.ModCreativeModTabs;
+import fr.wither.penguinmod.items.ModItems;
 import fr.wither.penguinmod.utils.Commons;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -22,6 +25,11 @@ public class WitherPenguinMod
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+
+        ModCreativeModTabs.register(modEventBus);
+        ModItems.register(modEventBus);
+
+
         modEventBus.addListener(this::commonSetup);
 
 
@@ -36,7 +44,9 @@ public class WitherPenguinMod
 
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-
+        if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+            event.accept(ModItems.PINDER_KINGUI);
+        }
     }
 
     @SubscribeEvent
