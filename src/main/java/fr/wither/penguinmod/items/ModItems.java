@@ -13,14 +13,8 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Commons.MOD_ID);
 
-Foods
     public static final RegistryObject<Item> PINDER_KINGUI = ITEMS.register("pinder_kingui",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
-                    // For comparison, golden carrot is nutrition 6 and saturation 1.2f
-                    .nutrition(10)
-                    .saturationMod(1.5f)
-                    .build()
-            )));
+            () -> new Item(new Item.Properties().food(ModFoods.PINDER_KINGUI)));
 
 
 
