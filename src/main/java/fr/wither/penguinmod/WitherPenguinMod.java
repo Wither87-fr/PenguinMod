@@ -1,6 +1,7 @@
 package fr.wither.penguinmod;
 
 import com.mojang.logging.LogUtils;
+import fr.wither.penguinmod.block.ModBlocks;
 import fr.wither.penguinmod.items.ModCreativeModTabs;
 import fr.wither.penguinmod.items.ModItems;
 import fr.wither.penguinmod.utils.Commons;
@@ -28,6 +29,7 @@ public class WitherPenguinMod
 
         ModCreativeModTabs.register(modEventBus);
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
 
         modEventBus.addListener(this::commonSetup);
