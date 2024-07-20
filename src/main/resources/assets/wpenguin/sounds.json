@@ -1,0 +1,14 @@
+{
+  "quack": {
+    "subtitles": "sounds.wpenguin.quack",
+    "sounds": [
+      "wpenguin:quack"
+    ]
+  },
+  "waddle": {
+    "subtitles": "sounds.wpenguin.waddle",
+    "sounds": [
+      "wpenguin:waddle"
+    ]
+  }
+}

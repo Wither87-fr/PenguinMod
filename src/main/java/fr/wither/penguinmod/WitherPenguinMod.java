@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import fr.wither.penguinmod.block.ModBlocks;
 import fr.wither.penguinmod.items.ModCreativeModTabs;
 import fr.wither.penguinmod.items.ModItems;
+import fr.wither.penguinmod.sound.ModSounds;
 import fr.wither.penguinmod.utils.Commons;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -36,6 +37,8 @@ public class WitherPenguinMod
 
 
         MinecraftForge.EVENT_BUS.register(this);
+
+        ModSounds.register(modEventBus);
 
         modEventBus.addListener(this::addCreative);
     }

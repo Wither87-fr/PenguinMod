@@ -1,4 +1,6 @@
 {
   "item.wpenguin.pinder_kingui" : "Pinder Kingui",
-  "creativetab.penguin_tab": "Penguin Mod"
+  "creativetab.penguin_tab": "Penguin Mod",
+  "sounds.wpenguin.quack": "Penguin's Quack",
+  "sounds.wpenguin.waddle": "Penguin waddling"
 }
