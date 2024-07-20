@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ICI",
+    "IMI",
+    "ICI"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:ice"
+    },
+    "C": {
+      "item": "minecraft:cocoa_beans"
+    },
+    "M": {
+      "item": "minecraft:milk_bucket"
+    }
+  },
+  "result": {
+    "item": "wpenguin:pinder_kingui"
+  }
+}
