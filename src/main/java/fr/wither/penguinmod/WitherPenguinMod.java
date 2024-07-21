@@ -2,10 +2,13 @@ package fr.wither.penguinmod;
 
 import com.mojang.logging.LogUtils;
 import fr.wither.penguinmod.block.ModBlocks;
+import fr.wither.penguinmod.entity.ModEntities;
+import fr.wither.penguinmod.entity.client.PenguinRenderer;
 import fr.wither.penguinmod.items.ModCreativeModTabs;
 import fr.wither.penguinmod.items.ModItems;
 import fr.wither.penguinmod.sound.ModSounds;
 import fr.wither.penguinmod.utils.Commons;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -31,6 +34,7 @@ public class WitherPenguinMod
         ModCreativeModTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModEntities.register(modEventBus);
 
 
         modEventBus.addListener(this::commonSetup);
@@ -52,19 +56,14 @@ public class WitherPenguinMod
         if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
             event.accept(ModItems.PINDER_KINGUI);
         }
+
+        if(event.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
+            event.accept(ModItems.PENGUIN_SPAWN_EGG);
+        }
     }
 
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event)
     {
-    }
-
-    @Mod.EventBusSubscriber(modid = Commons.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-    public static class ClientModEvents
-    {
-        @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event)
-        {
-        }
     }
 }

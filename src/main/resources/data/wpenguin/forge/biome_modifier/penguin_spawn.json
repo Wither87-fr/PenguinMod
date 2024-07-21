@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "#forge:is_cold/overworld",
+  "spawners": {
+    "type": "wpenguin:penguin",
+    "weight": 100,
+    "minCount": 20,
+    "maxCount": 50
+  }
+}

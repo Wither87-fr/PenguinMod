@@ -18,6 +18,7 @@ public class ModCreativeModTabs {
             .title(Component.translatable("creativetab.penguin_tab"))
             .displayItems((params, output) -> {
                 output.accept(ModItems.PINDER_KINGUI.get());
+                output.accept(ModItems.PENGUIN_SPAWN_EGG.get());
             })
             .build());
 

@@ -13,6 +13,8 @@ public class ModSounds {
 
     public static final RegistryObject<SoundEvent> QUACK = registerSoundEvent("quack");
     public static final RegistryObject<SoundEvent> WADDLE = registerSoundEvent("waddle");
+    public static final RegistryObject<SoundEvent> HURT = registerSoundEvent("hurt");
+    public static final RegistryObject<SoundEvent> DEATH = registerSoundEvent("death");
 
     private static RegistryObject<SoundEvent> registerSoundEvent(String name) {
         return SOUND_EVENTS.register(name, () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(Commons.MOD_ID, name)));

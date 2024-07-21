@@ -10,5 +10,21 @@
     "sounds": [
       "wpenguin:waddle"
     ]
+  },
+  "hurt": {
+    "subtitles": "sounds.wpenguin.hurt",
+    "sounds": [
+      "wpenguin:hurt1",
+      "wpenguin:hurt2",
+      "wpenguin:hurt3",
+      "wpenguin:hurt4",
+      "wpenguin:hurt5"
+    ]
+  },
+  "death": {
+    "subtitles": "sounds.wpenguin.death",
+    "sounds": [
+      "wpenguin:death"
+    ]
   }
 }
