@@ -1,8 +1,19 @@
 {
   "item.wpenguin.pinder_kingui" : "Pinder Kingui",
+  "item.wpenguin.penguin_spawn_egg" : "Penguin Spawn Egg",
+
   "creativetab.penguin_tab": "Penguin Mod",
+
   "sounds.wpenguin.quack": "Penguin's Quack",
   "sounds.wpenguin.waddle": "Penguin waddling",
   "sounds.wpenguin.hurt": "Penguin hurt",
-  "sounds.wpenguin.death": "Penguin dead"
+  "sounds.wpenguin.death": "Penguin dead",
+
+  "wpenguin.adv.lookatpenguin": "Pretty sure this is a guy in tuxedo",
+  "wpenguin.adv.lookatpenguin.descr": "Look at a penguin with a spy glass",
+  "wpenguin.adv.eatpindder": "Eat this delicious chocolate candy!",
+  "wpenguin.adv.eatpindder.descr": "We don't have the rights, but we have the taste!",
+
+
+  "entity.wpenguin.penguin": "Penguin"
 }

@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": {
+      "item": "wpenguin:penguin_spawn_egg"
+    },
+    "title": {
+      "translate": "wpenguin.adv.lookatpenguin"
+    },
+    "description": {
+      "translate": "wpenguin.adv.lookatpenguin.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "background": "minecraft:textures/block/dirt.png"
+  },
+  "criteria": {
+    "requirements": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type_specific": {
+                "type": "player",
+                "looking_at": {
+                  "type": "wpenguin:penguin"
+                }
+              }
+            }
+          }
+        ],
+        "item": {
+          "items": [
+            "minecraft:spyglass"
+          ]
+        }
+      }
+    }
+  }
+}

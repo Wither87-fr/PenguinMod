@@ -1,8 +1,21 @@
 {
   "item.wpenguin.pinder_kingui": "Pinder Kingui",
+  "item.wpenguin.penguin_spawn_egg" : "Oeuf d'apparition de Pingouin",
+
+
   "creativetab.penguin_tab": "Pingouins",
+
   "sounds.wpenguin.quack": "Cri du pingouin",
   "sounds.wpenguin.waddle": "Dandinement de Pingouin",
   "sounds.wpenguin.hurt": "Pingouin frappé",
-  "sounds.wpenguin.death": "Pingouin mort"
+  "sounds.wpenguin.death": "Pingouin mort",
+
+
+  "wpenguin.adv.lookatpenguin": "Je suis presque sûr que c'est un gars en smoking",
+  "wpenguin.adv.lookatpenguin.descr": "Regarde un pingouin avec une lunette d'espion",
+  "wpenguin.adv.eatpindder": "Mangez ce délicieux bonbon au chocolat !",
+  "wpenguin.adv.eatpindder.descr": "Nous n'avons pas les droits, mais nous avons le goût !",
+
+
+  "entity.wpenguin.penguin": "Pingouin"
 }

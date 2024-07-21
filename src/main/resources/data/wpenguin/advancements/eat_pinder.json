@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "wpenguin:pinder_kingui"
+    },
+    "title": {
+      "translate": "wpenguin.adv.eatpindder"
+    },
+    "description": {
+      "translate": "wpenguin.adv.eatpindder.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "wpenguin:look_at_penguin",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "wpenguin:pinder_kingui"
+          ]
+        }
+      }
+    }
+  }
+}
